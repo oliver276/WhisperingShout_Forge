@@ -34,10 +34,10 @@ public class ChatListener {
     }
 
     public double compareCoordinatesDistance(ChunkCoordinates player1, ChunkCoordinates player2){
-        double x = player1.posX - player2.posX;
-        double y = player1.posY - player2.posY;
-        double z = player1.posZ - player2.posZ;
-        return Math.abs(x + y + z);
+        double x = Math.abs(player1.posX - player2.posX);
+        double y = Math.abs(player1.posY - player2.posY);
+        double z = Math.abs(player1.posZ - player2.posZ);
+        return x + y + z;
     }
 
 
